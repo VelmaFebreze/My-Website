@@ -1,0 +1,241 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vella Keith</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="https://drive.google.com/uc?id=1YbJ3nT_p2QTp628EerHkckU-rgscAjTM">
+<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lugrasimo&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header">
+      <h1 class="name">Vella Keith</h1>
+      <nav>
+        <div class="nav">
+          <ul>
+            <a href="index.html" class="navlinks">Home</a>&nbsp &nbsp &nbsp
+            <a href="aboutme.html" class="navlinks">About Me</a>&nbsp &nbsp &nbsp
+            <a href="skills.html" class="navlinks">Skills</a>&nbsp &nbsp &nbsp
+            <a href="projects.html" class="navlinks">Projects</a>&nbsp &nbsp &nbsp
+            <a href="contactme.html" class="navlinks">Contact Me</a>&nbsp &nbsp &nbsp
+            <a href="thanks.html" class="navlinks">Thanks</a>&nbsp &nbsp &nbsp
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+  <img src="https://www.pngall.com/wp-content/uploads/5/Hello-Text-PNG.png" alt="" class="hipic">
+  <div class="main">
+      <br>
+      <br>
+    
+    <div class="intro">
+    <h1>In case you couldn't tell, this page is going to help you
+      <br>
+     get to know me (Vella) more.</h1>
+
+    <h1>If you don't want to know about me, you might as well
+      <br> 
+    go do something else. (:</h1>
+
+    <h1>Now... Onto the the fun stuff.</h1>
+    </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <div class="still-here">
+    <h2>...You're still here?</h2>
+    <br>
+    <h2>Uhh, feel free to click the navigation links up top to read more...</h2>
+    <br>
+    <h2 style="margin-bottom: 5rem;">You don't have to stay here...</h2>
+    </div>
+
+  <footer class="footer">
+    <div class=" linkedin-container">
+      <div class="image-wrapper">
+      <a href="https://www.linkedin.com/in/vellakeith/" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn symbol" width="100px" class="linkedin">
+      <img src="images/LinkedIn-After.png" alt="" class="linkedin-mess" width="100px"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+</Layout>
+
+<style>
+	* {
+    font-family:'Handlee';
+  }
+  body {
+    background-image: url("https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGJsYWNrJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    color: #526D82;
+}
+
+header {
+background-color: #000000;
+font-size: 50%;
+margin: auto;
+height: 305%;
+text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: dotted;
+    border-color: #DDE6ED;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+.name {
+text-align: left;
+font-size: 700%;
+margin-left: 5%;
+color: #EFFAE9;
+text-shadow: 0 0 5px #78BE98, 
+    0 0 10px #64B48B, 
+    0 0 15px #50AA7D, 
+    0 0 20px #3CA070, 
+    0 0 25px #289562, 
+    0 0 30px #148B55, 
+    0 0 35px #008147;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+from {
+  text-shadow: 0 0 5px #78BE98, 
+    0 0 10px #64B48B, 
+    0 0 15px #50AA7D, 
+    0 0 20px #3CA070, 
+    0 0 25px #289562, 
+    0 0 30px #148B55, 
+    0 0 35px #008147;
+}
+to {
+  text-shadow: 
+    0 0 10px #78BE98, 
+    0 0 20px #64B48B, 
+    0 0 30px #50AA7D, 
+    0 0 40px #3CA070, 
+    0 0 50px #289562, 
+    0 0 60px #148B55, 
+    0 0 70px #008147;
+}
+}
+.nav {
+    text-align: right;
+    font-size: 450%;
+    margin-right: 5%;
+text-shadow: 0 0 5px #419DE6, 
+    0 0 10px #4495D5, 
+    0 0 15px #478DC5, 
+    0 0 20px #4A85B4, 
+    0 0 25px #4C7DA3, 
+    0 0 30px #4F7593, 
+    0 0 35px #526D82;
+    display: inline;
+  }
+
+.nav a {
+    color: #000000;
+  }
+
+.nav a:visited {
+    color: #DDE6ED;
+  }
+  
+.nav a:hover {
+color: #DDE6ED;
+transition: fade-in;
+}
+.nav a:visited:hover {
+color: #000000;;
+transition: fade-in;
+}
+
+.main {
+    text-align: center;
+  }
+
+.hipic {
+  width:10%;
+  margin-left:45%;
+  margin-top: 2%;
+  text-align: center;
+}
+.still-here {
+  text-align: center;
+  color: #64B48B;
+}
+
+.linkedin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.linkedin,
+.linkedin-mess {
+  border: dotted;
+  border-radius: 13%;
+  border-color: #DDE6ED;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.linkedin-mess {
+  position: absolute;
+  top: 47%; /* Adjust this value slightly */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border-color: #40F8FF;
+}
+
+.linkedin-container:hover .linkedin {
+  opacity: 0;
+}
+
+.linkedin-container:hover .linkedin-mess {
+  opacity: 1;
+}
+
+.footer {
+    background-color: #000000;
+    border: dotted;
+    border-color: #DDE6ED;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 2%;
+  }
+</style>

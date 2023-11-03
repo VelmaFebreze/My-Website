@@ -1,0 +1,376 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lugrasimo&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+    
+        <div class="header">
+          <h1 class="name">Vella Keith</h1>
+          <nav>
+            <div class="nav">
+              <ul>
+                <a href="index.html" class="navlinks">Home</a>&nbsp &nbsp &nbsp
+                <a href="aboutme.html" class="navlinks">About Me</a>&nbsp &nbsp &nbsp
+                <a href="skills.html" class="navlinks">Skills</a>&nbsp &nbsp &nbsp
+                <a href="projects.html" class="navlinks">Projects</a>&nbsp &nbsp &nbsp
+                <a href="contactme.html" class="navlinks">Contact Me</a>&nbsp &nbsp &nbsp
+                <a href="thanks.html" class="navlinks">Thanks</a>&nbsp &nbsp &nbsp
+              </ul>
+            </div>
+          </nav>
+        </div>
+    
+      </header>
+        <h1 id="skills">Skills</h1>
+    
+        <p class="more">I'm new to this "Software Development" career path, so I don't have many HTML, JavaScript, CSS skills.
+          <br> 
+        What I will say is that I am very hardworking and responsible. I think I got that from my dad. I'm also willing to work out solutions. I love solving problems.
+          <br> 
+        I love to help people. I think that's my biggest asset. I'm really good with helping people and their problems and I care a lot.
+          <br> 
+        Lastly, and probably one of the best ones is that I am willing to learn new skills. I love learning That's part
+          <br> 
+        of why I took this program.
+          <br>
+          <br> 
+        I also can be very creative, which helps me to be able to style websites nicely. A good example of this would be some of my photos
+          <br>
+        I've taken and edited.
+          <br> 
+          <br>
+        <b style="color:#64B48B;">I have put some Before and After photos below.</b>
+        <br>
+        <br>
+        <b style="color:#64B48B;">Click the arrows to see the before and after photos!
+        </b>
+        </p>
+          <br>
+    
+          <div class="container-wrapper">
+            <div class="container">
+              <div id="slider">
+            <img src="images/FanningBefore.jpg" alt="before photo of old building">
+            <img src="images/FanningAfter.jpg" alt="after photo of old building">
+            <img src="images/BranchBefore.jpg" alt="before photo of a tree branch">
+            <img src="images/BranchAfter.jpg" alt="after photo of a tree branch">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+              </div>
+            </div>
+          </div>
+        <p class="more">This last skill came from one of my sisters.
+          <br>
+        <img src="https://drive.google.com/uc?id=15U1Q7REv6HRjQz1ODl82B9fOyGE9FuMf" alt="text saying 'Your skill is being a sister xD'" class="text-img"> 
+          <br>  
+        Which, in my opinion, is my favorite skill.
+        </p>
+        <footer class="footer">
+          <div class=" linkedin-container">
+            <div class="image-wrapper">
+            <a href="https://www.linkedin.com/in/vellakeith/" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn symbol" width="100px" class="linkedin">
+            <img src="images/LinkedIn-After.png" alt="" class="linkedin-mess" width="100px"></a>
+            </div>
+          </div>
+        </footer>
+    </body>
+    </html>
+    
+</Layout>
+
+<style>
+	* {
+    font-family:'Handlee';
+  }
+  body {
+    background-image: url("https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGJsYWNrJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    color: #526D82;
+}
+
+header {
+background-color: #000000;
+font-size: 50%;
+margin: auto;
+height: 305%;
+text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: dotted;
+    border-color: #DDE6ED;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+.name {
+text-align: left;
+font-size: 700%;
+margin-left: 5%;
+color: #EFFAE9;
+text-shadow: 0 0 5px #78BE98, 
+    0 0 10px #64B48B, 
+    0 0 15px #50AA7D, 
+    0 0 20px #3CA070, 
+    0 0 25px #289562, 
+    0 0 30px #148B55, 
+    0 0 35px #008147;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+from {
+  text-shadow: 0 0 5px #78BE98, 
+    0 0 10px #64B48B, 
+    0 0 15px #50AA7D, 
+    0 0 20px #3CA070, 
+    0 0 25px #289562, 
+    0 0 30px #148B55, 
+    0 0 35px #008147;
+}
+to {
+  text-shadow: 
+    0 0 10px #78BE98, 
+    0 0 20px #64B48B, 
+    0 0 30px #50AA7D, 
+    0 0 40px #3CA070, 
+    0 0 50px #289562, 
+    0 0 60px #148B55, 
+    0 0 70px #008147;
+}
+}
+.nav {
+    text-align: right;
+    font-size: 450%;
+    margin-right: 5%;
+text-shadow: 0 0 5px #419DE6, 
+    0 0 10px #4495D5, 
+    0 0 15px #478DC5, 
+    0 0 20px #4A85B4, 
+    0 0 25px #4C7DA3, 
+    0 0 30px #4F7593, 
+    0 0 35px #526D82;
+    display: inline;
+  }
+
+.nav a {
+    color: #000000;
+  }
+
+.nav a:visited {
+    color: #DDE6ED;
+  }
+  
+.nav a:hover {
+color: #DDE6ED;
+transition: fade-in;
+}
+.nav a:visited:hover {
+color: #000000;;
+transition: fade-in;
+}
+
+#skills {
+font-size:350%;
+color: #DDE6ED;
+text-shadow: 0 0 5px #419DE6, 
+    0 0 10px #4495D5, 
+    0 0 15px #478DC5, 
+    0 0 20px #4A85B4, 
+    0 0 25px #4C7DA3, 
+    0 0 30px #4F7593, 
+    0 0 35px #526D82;
+animation: glow 1s ease-in-out infinite alternate;
+text-align: center;
+}
+
+.more {
+font-size: 175%;
+text-align: center;
+}
+
+  .container {
+  text-align: center;
+  max-width: 100%; /* Allow the container to expand to the full width */
+}
+
+/* Center the container using flex */
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#slider {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+
+#slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+#slider img.active {
+  opacity: 1;
+}
+
+button:not([type="submit"]) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #526D82;
+  color: #f1f1f1;
+  font-size: 32px;
+  font-stretch: condensed;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background-color: #64B48B;
+}
+
+button#prev {
+  left: -35px;
+  padding: 7px 17px 7px 15px;
+}
+
+button#next {
+  right: -35px;
+  padding: 7px 15px 7px 17px;
+}
+
+.text-img {
+margin: 3%;
+padding:.5%;
+border:dotted;
+border-color: #DDE6ED;
+}
+
+.linkedin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.linkedin,
+.linkedin-mess {
+  border: dotted;
+  border-radius: 13%;
+  border-color: #DDE6ED;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.linkedin-mess {
+  position: absolute;
+  top: 47%; /* Adjust this value slightly */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border-color: #40F8FF;
+}
+
+.linkedin-container:hover .linkedin {
+  opacity: 0;
+}
+
+.linkedin-container:hover .linkedin-mess {
+  opacity: 1;
+}
+
+.footer {
+    background-color: #000000;
+    border: dotted;
+    border-color: #DDE6ED;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 2%;
+  }
+
+  @media only screen and (max-width: 845px) {
+  .nav {
+    font-size: 200%;
+  }
+  .name {
+    font-size: 300%;
+  }
+
+  .container {
+    max-width: 80%; /* Adjust this value to control the size on smaller screens */
+  }
+</style>
+
+<script>
+    const images = document.querySelectorAll('#slider img');
+const previousImage = document.getElementById("prev");
+const nextImage = document.getElementById("next");
+
+let currentIndex = 0;
+
+function reset() {
+  for (let i = 0; i < images.length; i++) {
+    images[i].classList.remove('active');
+  }
+}
+
+function initializeSlider() {
+  reset();
+  images[currentIndex].classList.add('active');
+}
+
+function slideLeft() {
+  reset();
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = images.length - 1;
+  }
+  images[currentIndex].classList.add('active');
+}
+
+function slideRight() {
+  reset();
+  currentIndex++;
+  if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+  images[currentIndex].classList.add('active');
+}
+
+initializeSlider();
+
+previousImage.addEventListener('click', function() {
+  slideLeft();
+});
+
+nextImage.addEventListener('click', function() {
+  slideRight();
+});
+</script>
